@@ -1,4 +1,5 @@
 # Atividade de ordenação
+Código básico de implementação dos algoritmos SelectionSort e InsertionSort
 # Exemplos de uso:
 # SelectionSort:
 SelectionSort 1 5 6 2 10
