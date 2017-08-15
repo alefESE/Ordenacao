@@ -1,0 +1,14 @@
+SelectionSort: SelectionSort.o
+	gcc SelectionSort.o -o SelectionSort
+
+SelectionSort.o: SelectionSort.c
+	gcc -c SelectionSort.c
+
+InsertionSort: InsertionSort.o
+	gcc InsertionSort.o -o InsertionSort
+
+InsertionSort.o: InsertionSort.c
+	gcc -c InsertionSort.c
+	
+clean:
+	rm *.o SelectionSort InsertionSort
