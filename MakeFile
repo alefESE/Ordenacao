@@ -1,14 +1,19 @@
-SelectionSort: SelectionSort.o
-	gcc SelectionSort.o -o SelectionSort
+all: SelectionSort InsertionSort MergeSort QuickSort HeapSort
 
-SelectionSort.o: SelectionSort.c
-	gcc -c SelectionSort.c
+SelectionSort: SelectionSort.c
+	gcc SelectionSort.c -o SelectionSort
 
-InsertionSort: InsertionSort.o
-	gcc InsertionSort.o -o InsertionSort
+InsertionSort: InsertionSort.c
+	gcc InsertionSort.c -o InsertionSort
 
-InsertionSort.o: InsertionSort.c
-	gcc -c InsertionSort.c
-	
+MergeSort: MergeSort.c
+	gcc -o MergeSort.c -o MergeSort
+
+QuickSort: QuickSort.c
+	gcc -o QuickSort.c -o QuickSort
+
+HeapSort: HeapSort.c
+	gcc -o HeapSort.c -o HeapSort
+
 clean:
-	rm *.o SelectionSort InsertionSort
+	rm *.o

@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     if (argc < 2)
     {
         printf("Modo de uso:\n");
-        printf("Selection <num1> <num2> <...>\n");
+        printf("InsertionSort <num1> <num2> <...>\n");
         return 0;
     }
     int len = argc - 1;
