@@ -7,13 +7,13 @@ InsertionSort: InsertionSort.c
 	gcc InsertionSort.c -o InsertionSort
 
 MergeSort: MergeSort.c
-	gcc -o MergeSort.c -o MergeSort
+	gcc MergeSort.c -o MergeSort
 
 QuickSort: QuickSort.c
-	gcc -o QuickSort.c -o QuickSort
+	gcc QuickSort.c -o QuickSort
 
 HeapSort: HeapSort.c
-	gcc -o HeapSort.c -o HeapSort
+	gcc HeapSort.c -o HeapSort
 
 clean:
 	rm *.o
