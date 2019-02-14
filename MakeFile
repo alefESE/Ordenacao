@@ -1,4 +1,9 @@
-all: SelectionSort InsertionSort MergeSort QuickSort HeapSort
+ifdef OS
+	del := del *.exe
+else
+	del := rm *.o
+endif
+all: SelectionSort InsertionSort MergeSort QuickSort HeapSort CountingSort
 
 SelectionSort: SelectionSort.c
 	gcc SelectionSort.c -o SelectionSort
@@ -15,5 +20,11 @@ QuickSort: QuickSort.c
 HeapSort: HeapSort.c
 	gcc HeapSort.c -o HeapSort
 
+CountingSort: CountingSort.c
+	gcc CountingSort.c -o CountingSort
+
+RadixSort: RadixSort.c
+	gcc RadixSort.c -o RadixSort
+
 clean:
-	rm *.o
+	$(del)
